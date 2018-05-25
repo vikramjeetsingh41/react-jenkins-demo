@@ -12,7 +12,7 @@ node {
 
        stage('install'){
          sh 'node -v'
-         sh 'npm install'
+         sh 'sudo npm install'
        }
 
        stage('Deploy'){
