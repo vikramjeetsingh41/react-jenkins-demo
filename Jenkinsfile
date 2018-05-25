@@ -22,7 +22,7 @@ node {
        stage('Cleanup'){
          echo 'prune and cleanup'
          sh 'npm prune'
-         sh 'rm node_modules -rf'
+         sh 'rm -R node_modules'
 
          mail body: 'project build successful',
                      from: 'vsingh@palo-it.com',
