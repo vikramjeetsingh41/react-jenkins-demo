@@ -23,15 +23,7 @@ node {
          echo 'prune and cleanup'
          sh 'npm prune'
          sh 'rm -R node_modules'
-
-         mail body: 'project build successful',
-                     from: 'vsingh@palo-it.com',
-                     replyTo: 'vsingh@palo-it.com',
-                     subject: 'project build successful',
-                     to: 'vsingh@palo-it.com'
        }
-
-
 
     }
     catch (err) {
